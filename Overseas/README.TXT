@@ -1,12 +1,11 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all they need to know. The comments should usually include at least:
-------------------------------------------------------------------------
+PROJECT TITLE: OVERSEAS
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+PURPOSE OF PROJECT: MAKE A FUN ADVENTURE GAME WHILE IMPROVING OUR GAME DEVELOPMENT SKILLS.
+
+VERSION or DATE: VERSION 1.0 NOVEMBER 8TH, 2021
+
+HOW TO START THIS PROJECT: TO START THIS PROJECT YOU NEED TO CLICK ON "RUN".
+
+AUTHORS: ELIAS KONSTANTOPOULOUS AND SHELDON GREEN.
+
+USER INSTRUCTIONS: YOU NEED TO USE THE ARROW KEYS TO MOVE AROUND IN THE GAME AND IF YOU WANT TO SHOOT YOU WILL NEED TO PRESS THE SPACE BAR.
