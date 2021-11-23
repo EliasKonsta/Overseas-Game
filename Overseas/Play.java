@@ -21,7 +21,7 @@ public class Play extends Buttons
     public void act()
     {
         checkMouse();
-        checkClick(new Background());
+        checkClick(new Level1());
         
     }
 }
