@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Score1" extends="Level1" extends-java="Level1" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class Score1.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Complete" type-java="Complete" name="complete" value="new Complete()" value-java=" new Complete()" enable="true"/>
+                <call expression="addObject(complete,427,244)" expression-java="addObject(complete, 427, 244)" enable="true"/>
+                <variable type="Score" type-java="Score" name="score" value="new Score()" value-java=" new Score()" enable="true"/>
+                <call expression="addObject(score,433,320)" expression-java="addObject(score, 433, 320)" enable="true"/>
+                <variable type="Next1" type-java="Next1" name="next1" value="new Next1()" value-java=" new Next1()" enable="true"/>
+                <call expression="addObject(next1,790,495)" expression-java="addObject(next1, 790, 495)" enable="true"/>
+                <call expression="next1.setLocation(809,500)" expression-java="next1.setLocation(809, 500)" enable="true"/>
+                <call expression="Greenfoot.stop()" expression-java="Greenfoot.stop()" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
