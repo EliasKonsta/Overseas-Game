@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Score2" extends="Level2" extends-java="Level2" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class Score2.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Complete2" type-java="Complete2" name="complete2" value="new Complete2()" value-java=" new Complete2()" enable="true"/>
+                <call expression="addObject(complete2,436,160)" expression-java="addObject(complete2, 436, 160)" enable="true"/>
+                <call expression="complete2.setLocation(454,174)" expression-java="complete2.setLocation(454, 174)" enable="true"/>
+                <variable type="Next3" type-java="Next3" name="next3" value="new Next3()" value-java=" new Next3()" enable="true"/>
+                <call expression="addObject(next3,757,277)" expression-java="addObject(next3, 757, 277)" enable="true"/>
+                <call expression="next3.setLocation(817,290)" expression-java="next3.setLocation(817, 290)" enable="true"/>
+                <call expression="complete2.setLocation(436,175)" expression-java="complete2.setLocation(436, 175)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
