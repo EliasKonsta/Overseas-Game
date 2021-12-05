@@ -18,7 +18,7 @@ public class Next3 extends Buttons
     }
     public void act()
     {
-                checkMouse();
+        checkMouse();
         checkClick(new level3());
     }
 }

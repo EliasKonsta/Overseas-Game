@@ -10,11 +10,11 @@ public class Exit extends Buttons
 {
    public Exit()
     {
-        GreenfootImage myTitle = new GreenfootImage(100,60);
-        Font adjustedFont = new Font(true, false,40);
+        GreenfootImage myTitle = new GreenfootImage(150,60);
+        Font adjustedFont = new Font(true, false,30);
         myTitle.setFont(adjustedFont);
         myTitle.setColor(Color.BLACK);
-        myTitle.drawString("Exit",0,50);
+        myTitle.drawString("Credits",0,50);
         setImage(myTitle);
     }
     

@@ -17,6 +17,7 @@
                 <if condition="isTouching(MC.class)" condition-java="isTouching(MC.class)" enable="true">
                     <ifStatements>
                         <call expression="getWorld().showText(&quot;GAME COMPLETED&quot;,429,161)" expression-java="getWorld().showText(&quot;GAME COMPLETED&quot;, 429, 161)" enable="true"/>
+                        <call expression="Greenfoot.setWorld(new Score3())" expression-java="Greenfoot.setWorld( new Score3())" enable="true"/>
                         <call expression="Greenfoot.stop()" expression-java="Greenfoot.stop()" enable="true"/>
                     </ifStatements>
                 </if>

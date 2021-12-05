@@ -19,7 +19,7 @@ public class TitleScreen extends World
     
     private void prepare()
     {
-        GreenfootImage logo = new GreenfootImage("Overseas-logo.jpg");
+        GreenfootImage logo = new GreenfootImage("Overseas-logo.png");
         Picture logoPic = new Picture(logo);
         addObject(logoPic,getWidth()/2,150);
         Play play = new Play();

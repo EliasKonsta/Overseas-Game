@@ -30,5 +30,14 @@ public class Score2 extends Level2
         addObject(next3, 757, 277);
         next3.setLocation(817, 290);
         complete2.setLocation(436, 175);
+        Restart2 restart2 =  new  Restart2();
+        addObject(restart2, 271, 282);
+        restart2.setLocation(212, 282);
+        Mainmenu mainmenu =  new  Mainmenu();
+        addObject(mainmenu, 458, 278);
+        mainmenu.setLocation(445, 284);
+        mainmenu.setLocation(487, 270);
+        mainmenu.setLocation(473, 273);
+        mainmenu.setLocation(507, 278);
     }
 }

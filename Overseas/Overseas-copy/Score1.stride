@@ -31,6 +31,17 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <variable type="Next1" type-java="Next1" name="next1" value="new Next1()" value-java=" new Next1()" enable="true"/>
                 <call expression="addObject(next1,789,287)" expression-java="addObject(next1, 789, 287)" enable="true"/>
                 <call expression="next1.setLocation(811,282)" expression-java="next1.setLocation(811, 282)" enable="true"/>
+                <variable type="Restart1" type-java="Restart1" name="restart1" value="new Restart1()" value-java=" new Restart1()" enable="true"/>
+                <call expression="addObject(restart1,467,287)" expression-java="addObject(restart1, 467, 287)" enable="true"/>
+                <call expression="restart1.setLocation(444,205)" expression-java="restart1.setLocation(444, 205)" enable="true"/>
+                <call expression="restart1.setLocation(447,204)" expression-java="restart1.setLocation(447, 204)" enable="true"/>
+                <call expression="restart1.setLocation(428,188)" expression-java="restart1.setLocation(428, 188)" enable="true"/>
+                <call expression="restart1.setLocation(50,276)" expression-java="restart1.setLocation(50, 276)" enable="true"/>
+                <call expression="restart1.setLocation(202,269)" expression-java="restart1.setLocation(202, 269)" enable="true"/>
+                <variable type="Mainmenu" type-java="Mainmenu" name="mainmenu" value="new Mainmenu()" value-java=" new Mainmenu()" enable="true"/>
+                <call expression="addObject(mainmenu,448,259)" expression-java="addObject(mainmenu, 448, 259)" enable="true"/>
+                <call expression="mainmenu.setLocation(479,263)" expression-java="mainmenu.setLocation(479, 263)" enable="true"/>
+                <call expression="mainmenu.setLocation(510,264)" expression-java="mainmenu.setLocation(510, 264)" enable="true"/>
             </body>
         </method>
     </methods>

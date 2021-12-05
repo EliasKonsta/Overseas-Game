@@ -24,21 +24,21 @@ public class Level1 extends Background
      */
     private void prepare()
     {
-        End end =  new  End();
+        End end =  new End();
         addObject(end, 462, 101);
-        MC mC =  new  MC();
+        MC mC =  new MC();
         addObject(mC, 454, 471);
-        Enemies enemies =  new  Enemies();
+        Enemies enemies =  new Enemies();
         addObject(enemies, 776, 51);
-        Enemies enemies2 =  new  Enemies();
+        Enemies enemies2 =  new Enemies();
         addObject(enemies2, 55, 93);
-        Enemies enemies3 =  new  Enemies();
+        Enemies enemies3 =  new Enemies();
         addObject(enemies3, 61, 396);
-        Enemies enemies4 =  new  Enemies();
+        Enemies enemies4 =  new Enemies();
         addObject(enemies4, 763, 406);
-        Enemies enemies5 =  new  Enemies();
+        Enemies enemies5 =  new Enemies();
         addObject(enemies5, 316, 60);
-        Enemies enemies6 =  new  Enemies();
+        Enemies enemies6 =  new Enemies();
         addObject(enemies6, 616, 105);
         mC.setLocation(455, 393);
         enemies3.setLocation(59, 309);
