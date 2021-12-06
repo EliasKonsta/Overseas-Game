@@ -23,14 +23,14 @@ public class Score3 extends level3
      */
     private void prepare()
     {
-        Restart3 restart3 =  new  Restart3();
+        Restart3 restart3 =  new Restart3();
         addObject(restart3, 191, 270);
         restart3.setLocation(214, 268);
         Greenfoot.stop();
-        Mainmenu mainmenu =  new  Mainmenu();
+        Mainmenu mainmenu =  new Mainmenu();
         addObject(mainmenu, 560, 269);
         mainmenu.setLocation(751, 272);
-        Complete3 complete3 =  new  Complete3();
+        Complete3 complete3 =  new Complete3();
         addObject(complete3, 422, 138);
         complete3.setLocation(477, 120);
         complete3.setLocation(491, 131);

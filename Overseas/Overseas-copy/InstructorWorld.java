@@ -16,6 +16,7 @@ public class InstructorWorld extends World
     public InstructorWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(382, 400, 1);
+        GreenfootImage logo = new GreenfootImage("Overseas-logo.png");
     }
 }

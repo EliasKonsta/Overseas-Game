@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="MC" extends="Characters" extends-java="Characters" enable="true" strideversion="1">
+    <javadoc xml:space="preserve">Write a description of class MC here. @author (your name) @version (a version number or a date)</javadoc>
+    <imports>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="private" type="int" type-java="int" name="vSpeed" value="0" value-java="0" enable="true"/>
+        <variable access="private" type="int" type-java="int" name="acceleration" value="2" value-java="2" enable="true"/>
+        <variable access="private" type="int" type-java="int" name="speed" value="2" value-java="2" enable="true"/>
+        <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="image1" enable="true"/>
+        <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="image2" enable="true"/>
+        <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="image3" enable="true"/>
+        <variable access="private" type="GreenfootImage" type-java="GreenfootImage" name="image4" enable="true"/>
+    </fields>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <assign dest="image1" dest-java="image1" src="new GreenfootImage(&quot;piratr1.png&quot;)" src-java=" new GreenfootImage(&quot;piratr1.png&quot;)" enable="true"/>
+                <assign dest="image2" dest-java="image2" src="new GreenfootImage(&quot;piratr2.png&quot;)" src-java=" new GreenfootImage(&quot;piratr2.png&quot;)" enable="true"/>
+                <assign dest="image3" dest-java="image3" src="new GreenfootImage(&quot;piratr3.png&quot;)" src-java=" new GreenfootImage(&quot;piratr3.png&quot;)" enable="true"/>
+                <assign dest="image4" dest-java="image4" src="new GreenfootImage(&quot;piratr4.png&quot;)" src-java=" new GreenfootImage(&quot;piratr4.png&quot;)" enable="true"/>
+                <call expression="setImage(image1)" expression-java="setImage(image1)" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the MC wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="checkKey()" expression-java="checkKey()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="checkKey" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="Greenfoot.isKeyDown(&quot;up&quot;)" condition-java="Greenfoot.isKeyDown(&quot;up&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="setRotation(270)" expression-java="setRotation(270)" enable="true"/>
+                        <call expression="move(2)" expression-java="move(2)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;left&quot;)" condition-java="Greenfoot.isKeyDown(&quot;left&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="setRotation(180)" expression-java="setRotation(180)" enable="true"/>
+                        <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;right&quot;)" condition-java="Greenfoot.isKeyDown(&quot;right&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="setRotation(360)" expression-java="setRotation(360)" enable="true"/>
+                        <call expression="move(3)" expression-java="move(3)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;down&quot;)" condition-java="Greenfoot.isKeyDown(&quot;down&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="setRotation(90)" expression-java="setRotation(90)" enable="true"/>
+                        <call expression="move(2)" expression-java="move(2)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <call expression="switchImage()" expression-java="switchImage()" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="moveRight" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="setLocation(getX()+speed,getY())" expression-java="setLocation(getX() + speed, getY())" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="switchImage" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="getImage()==image1" condition-java="getImage() == image1" enable="true">
+                    <ifStatements>
+                        <call expression="setImage(image2)" expression-java="setImage(image2)" enable="true"/>
+                    </ifStatements>
+                    <else>
+                        <call expression="setImage(image3)" expression-java="setImage(image3)" enable="true"/>
+                    </else>
+                </if>
+                <if condition="getImage()==image2" condition-java="getImage() == image2" enable="true">
+                    <ifStatements>
+                        <call expression="setImage(image3)" expression-java="setImage(image3)" enable="true"/>
+                    </ifStatements>
+                    <else>
+                        <call expression="setImage(image4)" expression-java="setImage(image4)" enable="true"/>
+                    </else>
+                </if>
+                <if condition="getImage()==image3" condition-java="getImage() == image3" enable="true">
+                    <ifStatements>
+                        <call expression="setImage(image4)" expression-java="setImage(image4)" enable="true"/>
+                    </ifStatements>
+                    <else>
+                        <call expression="setImage(image1)" expression-java="setImage(image1)" enable="true"/>
+                        <return enable="true"/>
+                    </else>
+                </if>
+                <if condition="getImage()==image4" condition-java="getImage() == image4" enable="true">
+                    <ifStatements>
+                        <call expression="setImage(image4)" expression-java="setImage(image4)" enable="true"/>
+                    </ifStatements>
+                    <else>
+                        <call expression="setImage(image1)" expression-java="setImage(image1)" enable="true"/>
+                    </else>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>
