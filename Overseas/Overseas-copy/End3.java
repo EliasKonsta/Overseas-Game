@@ -16,7 +16,7 @@ public class End3 extends Characters
     {
         if (isTouching(MC.class)) {
             getWorld().showText("GAME COMPLETED", 429, 161);
-            Greenfoot.setWorld( new  Score3());
+            Greenfoot.setWorld( new Score3());
             Greenfoot.stop();
         }
     }

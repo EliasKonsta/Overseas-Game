@@ -16,7 +16,7 @@ public class End2 extends Characters
     {
         if (isTouching(MC.class)) {
             getWorld().showText("LEVEL 1 COMPLETED", 526, 268);
-            Greenfoot.setWorld( new  Score2());
+            Greenfoot.setWorld( new Score2());
             Greenfoot.stop();
         }
     }

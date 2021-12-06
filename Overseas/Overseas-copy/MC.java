@@ -20,10 +20,10 @@ public class MC extends Characters
      */
     public MC()
     {
-        image1 =  new  GreenfootImage("piratr1.png");
-        image2 =  new  GreenfootImage("piratr2.png");
-        image3 =  new  GreenfootImage("piratr3.png");
-        image4 =  new  GreenfootImage("piratr4.png");
+        image1 =  new GreenfootImage("piratr1.png");
+        image2 =  new GreenfootImage("piratr2.png");
+        image3 =  new GreenfootImage("piratr3.png");
+        image4 =  new GreenfootImage("piratr4.png");
         setImage(image1);
     }
 

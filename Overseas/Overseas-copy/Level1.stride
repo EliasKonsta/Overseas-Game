@@ -54,6 +54,12 @@
                 <call expression="end.setLocation(836,180)" expression-java="end.setLocation(836, 180)" enable="true"/>
                 <call expression="mC.setLocation(18,192)" expression-java="mC.setLocation(18, 192)" enable="true"/>
                 <call expression="end.setLocation(833,181)" expression-java="end.setLocation(833, 181)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies7" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies7,715,190)" expression-java="addObject(enemies7, 715, 190)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies8" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies8,796,43)" expression-java="addObject(enemies8, 796, 43)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies9" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies9,437,282)" expression-java="addObject(enemies9, 437, 282)" enable="true"/>
             </body>
         </method>
         <method access="public" type="void" type-java="void" name="act" enable="true">
