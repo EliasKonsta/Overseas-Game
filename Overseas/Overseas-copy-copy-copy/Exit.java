@@ -23,8 +23,7 @@ public class Exit extends Buttons
         checkMouse();
         if(Greenfoot.mouseClicked(this))
         {
-            checkMouse();
-            checkClick(new CreditWorld());
+            Greenfoot.stop();
         }
     }
 }

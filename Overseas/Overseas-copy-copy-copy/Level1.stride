@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Level1" extends="Background" extends-java="Background" enable="true" strideversion="1">
+    <javadoc xml:space="preserve">Write a description of class Level1 here.
+@author (your name) @version (a version number or a date)</javadoc>
+    <imports>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <comment xml:space="preserve">(World, Actor, GreenfootImage, Greenfoot and MouseInfo)</comment>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class Level1.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program. That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="End" type-java="End" name="end" value="new End()" value-java=" new End()" enable="true"/>
+                <call expression="addObject(end,462,101)" expression-java="addObject(end, 462, 101)" enable="true"/>
+                <variable type="MC" type-java="MC" name="mC" value="new MC()" value-java=" new MC()" enable="true"/>
+                <call expression="addObject(mC,454,471)" expression-java="addObject(mC, 454, 471)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies,776,51)" expression-java="addObject(enemies, 776, 51)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies2" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies2,55,93)" expression-java="addObject(enemies2, 55, 93)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies3" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies3,61,396)" expression-java="addObject(enemies3, 61, 396)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies4" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies4,763,406)" expression-java="addObject(enemies4, 763, 406)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies5" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies5,316,60)" expression-java="addObject(enemies5, 316, 60)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies6" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies6,616,105)" expression-java="addObject(enemies6, 616, 105)" enable="true"/>
+                <call expression="mC.setLocation(455,393)" expression-java="mC.setLocation(455, 393)" enable="true"/>
+                <call expression="enemies3.setLocation(59,309)" expression-java="enemies3.setLocation(59, 309)" enable="true"/>
+                <call expression="removeObject(enemies3)" expression-java="removeObject(enemies3)" enable="true"/>
+                <call expression="removeObject(enemies2)" expression-java="removeObject(enemies2)" enable="true"/>
+                <call expression="removeObject(enemies5)" expression-java="removeObject(enemies5)" enable="true"/>
+                <call expression="removeObject(enemies6)" expression-java="removeObject(enemies6)" enable="true"/>
+                <call expression="enemies4.setLocation(782,316)" expression-java="enemies4.setLocation(782, 316)" enable="true"/>
+                <call expression="removeObject(enemies4)" expression-java="removeObject(enemies4)" enable="true"/>
+                <call expression="removeObject(enemies)" expression-java="removeObject(enemies)" enable="true"/>
+                <call expression="end.setLocation(828,163)" expression-java="end.setLocation(828, 163)" enable="true"/>
+                <call expression="mC.setLocation(28,176)" expression-java="mC.setLocation(28, 176)" enable="true"/>
+                <call expression="end.setLocation(836,180)" expression-java="end.setLocation(836, 180)" enable="true"/>
+                <call expression="mC.setLocation(18,192)" expression-java="mC.setLocation(18, 192)" enable="true"/>
+                <call expression="end.setLocation(833,181)" expression-java="end.setLocation(833, 181)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies7" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies7,715,190)" expression-java="addObject(enemies7, 715, 190)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies8" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies8,796,43)" expression-java="addObject(enemies8, 796, 43)" enable="true"/>
+                <variable type="Enemies" type-java="Enemies" name="enemies9" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
+                <call expression="addObject(enemies9,437,282)" expression-java="addObject(enemies9, 437, 282)" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="Greenfoot.isKeyDown(&quot;x&quot;)" condition-java="Greenfoot.isKeyDown(&quot;x&quot;)" enable="false">
+                    <ifStatements>
+                        <call expression="Greenfoot.setWorld(new Level2())" expression-java="Greenfoot.setWorld( new Level2())" enable="false"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>

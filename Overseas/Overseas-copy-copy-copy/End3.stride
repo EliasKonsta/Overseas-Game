@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="End3" extends="Characters" extends-java="Characters" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the End3 wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="isTouching(MC.class)" condition-java="isTouching(MC.class)" enable="true">
+                    <ifStatements>
+                        <call expression="Greenfoot.playSound(&quot;win sound 1.wav&quot;)" expression-java="Greenfoot.playSound(&quot;win sound 1.wav&quot;)" enable="true"/>
+                        <call expression="getWorld().showText(&quot;GAME COMPLETED&quot;,429,161)" expression-java="getWorld().showText(&quot;GAME COMPLETED&quot;, 429, 161)" enable="true"/>
+                        <call expression="Greenfoot.setWorld(new Score3())" expression-java="Greenfoot.setWorld( new Score3())" enable="true"/>
+                        <call expression="Greenfoot.stop()" expression-java="Greenfoot.stop()" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>

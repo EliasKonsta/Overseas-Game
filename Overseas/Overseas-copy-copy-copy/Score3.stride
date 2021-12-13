@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="Score3" extends="level3" extends-java="level3" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class Score3.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Prepare the world for the start of the program.
+That is: create the initial objects and add them to the world.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Restart3" type-java="Restart3" name="restart3" value="new Restart3()" value-java=" new Restart3()" enable="true"/>
+                <call expression="addObject(restart3,191,270)" expression-java="addObject(restart3, 191, 270)" enable="true"/>
+                <call expression="restart3.setLocation(214,268)" expression-java="restart3.setLocation(214, 268)" enable="true"/>
+                <call expression="Greenfoot.stop()" expression-java="Greenfoot.stop()" enable="true"/>
+                <variable type="Mainmenu" type-java="Mainmenu" name="mainmenu" value="new Mainmenu()" value-java=" new Mainmenu()" enable="true"/>
+                <call expression="addObject(mainmenu,560,269)" expression-java="addObject(mainmenu, 560, 269)" enable="true"/>
+                <call expression="mainmenu.setLocation(751,272)" expression-java="mainmenu.setLocation(751, 272)" enable="true"/>
+                <variable type="Complete3" type-java="Complete3" name="complete3" value="new Complete3()" value-java=" new Complete3()" enable="true"/>
+                <call expression="addObject(complete3,422,138)" expression-java="addObject(complete3, 422, 138)" enable="true"/>
+                <call expression="complete3.setLocation(477,120)" expression-java="complete3.setLocation(477, 120)" enable="true"/>
+                <call expression="complete3.setLocation(491,131)" expression-java="complete3.setLocation(491, 131)" enable="true"/>
+                <call expression="complete3.setLocation(319,129)" expression-java="complete3.setLocation(319, 129)" enable="true"/>
+                <call expression="complete3.setLocation(361,121)" expression-java="complete3.setLocation(361, 121)" enable="true"/>
+                <call expression="complete3.setLocation(432,121)" expression-java="complete3.setLocation(432, 121)" enable="true"/>
+                <call expression="complete3.setLocation(443,169)" expression-java="complete3.setLocation(443, 169)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
