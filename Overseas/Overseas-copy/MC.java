@@ -33,6 +33,7 @@ public class MC extends Characters
     public void act()
     {
         checkKey();
+        ();
     }
 
     /**

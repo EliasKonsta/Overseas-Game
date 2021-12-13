@@ -21,9 +21,6 @@ public class Exit extends Buttons
     public void act()
     {
         checkMouse();
-        if(Greenfoot.mouseClicked(this))
-        {
-            Greenfoot.stop();
-        }
+        checkClick(new CreditWorld());
     }
 }

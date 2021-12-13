@@ -60,6 +60,22 @@ public class Level1 extends Background
         addObject(enemies8, 796, 43);
         Enemies enemies9 =  new  Enemies();
         addObject(enemies9, 437, 282);
+        Collect collect =  new  Collect();
+        addObject(collect, 183, 171);
+        Collect collect2 =  new  Collect();
+        addObject(collect2, 186, 261);
+        Collect collect3 =  new  Collect();
+        addObject(collect3, 457, 147);
+        Collect collect4 =  new  Collect();
+        addObject(collect4, 467, 214);
+        Collect collect5 =  new  Collect();
+        addObject(collect5, 696, 272);
+        Collect collect6 =  new  Collect();
+        addObject(collect6, 679, 57);
+        Collect collect7 =  new  Collect();
+        addObject(collect7, 426, 37);
+        Collect collect8 =  new  Collect();
+        addObject(collect8, 158, 40);
     }
 
     /**

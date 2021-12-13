@@ -60,6 +60,22 @@
                 <call expression="addObject(enemies8,796,43)" expression-java="addObject(enemies8, 796, 43)" enable="true"/>
                 <variable type="Enemies" type-java="Enemies" name="enemies9" value="new Enemies()" value-java=" new Enemies()" enable="true"/>
                 <call expression="addObject(enemies9,437,282)" expression-java="addObject(enemies9, 437, 282)" enable="true"/>
+                <variable type="Collect" type-java="Collect" name="collect" value="new Collect()" value-java=" new Collect()" enable="true"/>
+                <call expression="addObject(collect,183,171)" expression-java="addObject(collect, 183, 171)" enable="true"/>
+                <variable type="Collect" type-java="Collect" name="collect2" value="new Collect()" value-java=" new Collect()" enable="true"/>
+                <call expression="addObject(collect2,186,261)" expression-java="addObject(collect2, 186, 261)" enable="true"/>
+                <variable type="Collect" type-java="Collect" name="collect3" value="new Collect()" value-java=" new Collect()" enable="true"/>
+                <call expression="addObject(collect3,457,147)" expression-java="addObject(collect3, 457, 147)" enable="true"/>
+                <variable type="Collect" type-java="Collect" name="collect4" value="new Collect()" value-java=" new Collect()" enable="true"/>
+                <call expression="addObject(collect4,467,214)" expression-java="addObject(collect4, 467, 214)" enable="true"/>
+                <variable type="Collect" type-java="Collect" name="collect5" value="new Collect()" value-java=" new Collect()" enable="true"/>
+                <call expression="addObject(collect5,696,272)" expression-java="addObject(collect5, 696, 272)" enable="true"/>
+                <variable type="Collect" type-java="Collect" name="collect6" value="new Collect()" value-java=" new Collect()" enable="true"/>
+                <call expression="addObject(collect6,679,57)" expression-java="addObject(collect6, 679, 57)" enable="true"/>
+                <variable type="Collect" type-java="Collect" name="collect7" value="new Collect()" value-java=" new Collect()" enable="true"/>
+                <call expression="addObject(collect7,426,37)" expression-java="addObject(collect7, 426, 37)" enable="true"/>
+                <variable type="Collect" type-java="Collect" name="collect8" value="new Collect()" value-java=" new Collect()" enable="true"/>
+                <call expression="addObject(collect8,158,40)" expression-java="addObject(collect8, 158, 40)" enable="true"/>
             </body>
         </method>
         <method access="public" type="void" type-java="void" name="act" enable="true">

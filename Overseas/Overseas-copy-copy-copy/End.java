@@ -16,7 +16,7 @@ public class End extends Characters
     {
         if (isTouching(MC.class)) {
             Greenfoot.playSound("win sound 1.wav");
-            Greenfoot.setWorld( new  Score1());
+            Greenfoot.setWorld( new Score1());
             Greenfoot.stop();
         }
     }

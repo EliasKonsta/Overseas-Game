@@ -35,6 +35,7 @@
             <throws/>
             <body>
                 <call expression="checkKey()" expression-java="checkKey()" enable="true"/>
+                <call expression="()" expression-java="()" enable="true"/>
             </body>
         </method>
         <method access="public" type="void" type-java="void" name="checkKey" enable="true">

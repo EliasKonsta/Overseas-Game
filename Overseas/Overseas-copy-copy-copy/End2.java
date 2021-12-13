@@ -17,7 +17,7 @@ public class End2 extends Characters
         if (isTouching(MC.class)) {
             Greenfoot.playSound("win sound 1.wav");
             getWorld().showText("LEVEL 2 COMPLETED", 526, 268);
-            Greenfoot.setWorld( new  Score2());
+            Greenfoot.setWorld( new Score2());
             Greenfoot.stop();
         }
     }
